@@ -162,3 +162,87 @@
 .resend-mail {
   display: inline-block;
 }
+
+/*----共通---*/
+.label_text {
+  color: #4f4f4f;
+  font-size: 12px;
+}
+
+.alert {
+  color: red;
+}
+
+.cat {
+  margin-top: 20px;
+}
+
+.cat:first-child {
+  margin-top: 0;
+}
+
+.text_area {
+  background-color: #fbfbfb;
+  border:1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: text;
+  color: #545658;
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 5px;
+  height: 36px;
+  width: 100%;
+}
+
+.text_area:focus {
+  background-color: #fff;
+  border-color: #99ffcc;
+  box-shadow: 0 0 4px #eafff4;
+  outline: 0;
+}
+
+/*---名前---*/
+.name-box {
+  display: flex;
+}
+
+.name {
+  margin-left: 15px;
+  width: 100%;
+}
+
+.name:first-child {
+  margin-left: 0;
+}
+
+/*---性別---*/
+.gender-list {
+  color: #545658;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.gender-content {
+  margin-left: 10px;
+}
+
+.gender-content:first-child {
+  margin-left: 0;
+}
+
+/*希望コース*/
+.course-list {
+  color: #545658;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.course-list:first-of-type {
+  margin-top: 0;
+}
+
+/*---備考---*/
+.remarks .input-area {
+  height: 100px;
+}
