@@ -197,9 +197,13 @@
 
 .text_area:focus {
   background-color: #fff;
-  border-color: #99ffcc;
-  box-shadow: 0 0 4px #eafff4;
-  outline: 0;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  outline: none;
+}
+
+.gender-content input {
+  display: none;
 }
 
 /*---名前---*/
@@ -225,10 +229,40 @@
 
 .gender-content {
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .gender-content:first-child {
   margin-left: 0;
+}
+
+.gender-content span {
+  position: relative;
+  padding: 3px 3px 3px 20px;
+  display: inline-block;
+}
+
+.gender-content span::before {
+  content: "";
+  position: absolute;
+  left: 0 ;
+  background-color: #fbfbfb;
+  border:1px solid #d9d9d9;
+  border-radius: 50%;
+  height: 14px;
+  width: 14px;
+}
+
+.gender-input:checked + span::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  background-color: #01bfbd;
+  border-radius: 50%;
+  height: 8px;
+  width: 8px;
 }
 
 /*希望コース*/
