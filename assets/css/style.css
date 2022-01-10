@@ -336,3 +336,25 @@
 .remarks .input-area {
   height: 100px;
 }
+
+/*送信ボタン*/
+.submit {
+  background-color: #01bfbd;
+  border:1px solid #01bfbd;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 15px;
+  transition: .3s;
+}
+
+.submit:hover {
+  background-color: #01a6a4;
+}
+
+.submit:active {
+  background-color: #fff;
+  border:1px solid #d9d9d9;
+  color: #01bfbd;
+}
