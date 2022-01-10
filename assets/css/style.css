@@ -163,7 +163,7 @@
   display: inline-block;
 }
 
-/*----共通---*/
+/*----form common style---*/
 .label_text {
   color: #4f4f4f;
   font-size: 12px;
@@ -186,7 +186,6 @@
   border:1px solid #d9d9d9;
   border-radius: 3px;
   box-sizing: border-box;
-  cursor: text;
   color: #545658;
   font-size: 13px;
   margin-top: 5px;
@@ -199,11 +198,18 @@
   background-color: #fff;
   border-color: rgba(59, 133, 133, .4);
   box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
-  outline: none;
 }
 
-.gender-content input {
+.gender-content input, .course input {
   display: none;
+}
+
+.input-init {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  resize: none;
 }
 
 /*---名前---*/
@@ -265,6 +271,29 @@
   width: 8px;
 }
 
+/*出身*/
+.select-area {
+  position: relative;
+}
+
+.select-area::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  transform: rotate(45deg);
+}
+
+.origin-input:focus {
+  background-color: #fbfbfb;
+  border-color: #d9d9d9;
+  box-shadow: none;
+}
+
 /*希望コース*/
 .course-list {
   color: #545658;
@@ -273,7 +302,34 @@
 }
 
 .course-list:first-of-type {
-  margin-top: 0;
+  margin-top: 5px;
+}
+
+.course-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border:1px solid #d9d9d9;
+  height: 15px;
+  width: 15px;
+}
+
+.course-list input:checked + .course-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
 }
 
 /*---備考---*/
